@@ -20,6 +20,7 @@ class Zutat:
         if not neuer_name:
             raise ValueError("Name darf nicht leer sein.")
         self.__name = neuer_name
+        
     
 z = Zutat("Tofu")
 print(z.name)
