@@ -1,11 +1,11 @@
-from kategorie import Kategorie
+ï»¿from kategorie import Kategorie
 
 class Zutat:
     def __init__(self, name: str, kategorie: Kategorie):
         if not name or not name.strip():
             raise ValueError("Der Name der Zutat darf nicht leer sein.")
         if not isinstance(kategorie, Kategorie):
-            raise ValueError("Die Kategorie muss ein gültiger Kategorie-Wert sein.")
+            raise ValueError("Die Kategorie muss ein gueltiger Kategorie-Wert sein.")
 
         self.__name = name.strip()
         self.__kategorie = kategorie
@@ -30,6 +30,6 @@ class Zutat:
     @kategorie.setter
     def kategorie(self, value):
         if not isinstance(value, Kategorie):
-            raise ValueError("Die Kategorie muss ein gültiger Kategorie-Wert sein.")
+            raise ValueError("Die Kategorie muss ein gueltiger Kategorie-Wert sein.")
         self.__kategorie = value
 

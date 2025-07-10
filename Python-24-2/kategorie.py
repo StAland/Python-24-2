@@ -1,6 +1,6 @@
-from enum import Enum
+ï»¿from enum import Enum
 
 class Kategorie(Enum):
     PROTEIN = "Protein"
-    SAETTIGUNGSBEILAGE = "Sättigungsbeilage"
-    GEMUESE = "Gemüse"
+    SAETTIGUNGSBEILAGE = "Saettigungsbeilage"
+    GEMUESE = "Gemuese"
