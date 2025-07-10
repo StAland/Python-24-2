@@ -9,6 +9,8 @@ class TestZutat(unittest.TestCase):
         self.assertEqual(lachs.name, "Lachs")
         self.assertEqual(lachs.kategorie, Kategorie.PROTEIN)
 
-
+    def test_zutat_erstellen_leerer_name(self):
+        with self.assertRaises(ValueError):
+            Zutat("", Kategorie.SAETTIGUNGSBEILAGE)
 
 
