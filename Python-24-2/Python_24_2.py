@@ -1,7 +1,8 @@
 
 class Zutat:
     def __init__(self, name):
-        self.__name = name  # Das _ zeigt: "Bitte nicht direkt anfassen"
+        self.__name = name
+        self.__zahl = 0
 
     def get_name(self):
         return self.__name
@@ -21,8 +22,12 @@ class Zutat:
             raise ValueError("Name darf nicht leer sein.")
         self.__name = neuer_name
         
+        
     
 z = Zutat("Tofu")
 print(z.name)
 z.name = "Seitan"
 print(z.name)
+z.zahl += 1
+
+print(z.zahl)
